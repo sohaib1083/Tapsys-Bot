@@ -1,0 +1,38 @@
+Python for backend and AI integration.
+Twilio or any VoIP service for handling calls.
+Google Cloud Speech-to-Text API for voice recognition. 
+Google Cloud Text-to-Speech API or AWS Polly for responses in Urdu.
+++ Whisper
+
+Database (e.g., SQLite for simplicity).
+Postman or Curl for API testing.
+
+python -m pip install flask twilio google-cloud-speech google-cloud-texttospeech transformers
+
+
+Whisper:
+
+Advantages
+High Accuracy: Whisper performs well even in noisy environments or with diverse accents.
+Multilingual Support: Recognizes and processes speech in multiple languages.
+Open-Source: Free to use and customize for personal or commercial applications.
+Robustness: Works well on low-quality audio and challenging scenarios.
+How Whisper Works
+Whisper is based on a transformer model, trained on a massive dataset of multilingual audio data. Its architecture and training allow it to:
+
+Handle real-world noise and varied speech patterns.
+Perform multilingual transcription and translation effectively.
+Work in both real-time and batch processing modes.
+
+
+db: sqlite3
+Tables: merchants
+        tickets 
+
+To view the DDL:
+- sqlite3 tapsys.db
+- .schema
+
+api with endpoint:
+/lookup 
+will start working as soon as you run lookup.py --> 
